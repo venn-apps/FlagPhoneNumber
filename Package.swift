@@ -11,6 +11,10 @@ let package = Package(
         .library(
             name: "FlagPhoneNumber",
             targets: ["FlagPhoneNumber"]
+        ),
+        .library(
+            name: "libPhoneNumber",
+            targets: ["libPhoneNumber"]
         )
     ],
     targets: [
