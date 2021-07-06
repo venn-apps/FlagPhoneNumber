@@ -11,21 +11,17 @@ let package = Package(
         .library(
             name: "FlagPhoneNumber",
             targets: ["FlagPhoneNumber"]
-        ),
-        .library(
-            name: "libPhoneNumber",
-            targets: ["libPhoneNumber"]
         )
     ],
     targets: [
+        .binaryTarget(
+            name: "libPhoneNumber",
+            path: "libPhoneNumber.xcframework"
+        ),
         .target(
             name: "FlagPhoneNumber",
             dependencies: ["libPhoneNumber"],
             path: "Sources"
-        ),
-        .target(
-            name: "libPhoneNumber",
-            path: "libPhoneNumber"
         )
     ],
     swiftLanguageVersions: [.v5]
