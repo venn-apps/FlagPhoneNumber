@@ -7,7 +7,7 @@
 
 import Foundation
 
-public extension Bundle {
+public extension Foundation.Bundle {
 
 	@objc static var FlagIcons = FlagPhoneNumber()
 

@@ -21,7 +21,10 @@ let package = Package(
         .target(
             name: "FlagPhoneNumber",
             dependencies: ["libPhoneNumber"],
-            path: "Sources"
+            path: "Sources",
+            resources: [
+                .copy("Resources")
+            ]
         )
     ],
     swiftLanguageVersions: [.v5]
