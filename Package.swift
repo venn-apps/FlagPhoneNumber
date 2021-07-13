@@ -23,7 +23,8 @@ let package = Package(
             dependencies: ["libPhoneNumber"],
             path: "Sources",
             resources: [
-                .copy("Resources")
+                .copy("Resources"),
+                .copy("FlagPhoneNumber/Resources/countryCodes.json")
             ]
         )
     ],
