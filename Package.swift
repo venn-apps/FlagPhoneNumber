@@ -10,6 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "FlagPhoneNumber",
+            type: .static,
             targets: ["FlagPhoneNumber"]
         )
     ],
