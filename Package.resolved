@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "libPhoneNumber",
+        "repositoryURL": "https://github.com/iziz/libPhoneNumber-iOS.git",
+        "state": {
+          "branch": "master",
+          "revision": "5e34f5280897a80290cf34378b1a2a350c841de8",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

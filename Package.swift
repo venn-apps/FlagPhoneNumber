@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "FlagPhoneNumber",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v9)
     ],
     products: [
         .library(
@@ -13,11 +13,14 @@ let package = Package(
             targets: ["FlagPhoneNumber"]
         )
     ],
-    targets: [
-        .binaryTarget(
+    dependencies: [
+        .package(
             name: "libPhoneNumber",
-            path: "libPhoneNumber.xcframework"
-        ),
+            url: "https://github.com/iziz/libPhoneNumber-iOS.git",
+            .branch("master")
+        )
+    ],
+    targets: [
         .target(
             name: "FlagPhoneNumber",
             dependencies: ["libPhoneNumber"],
